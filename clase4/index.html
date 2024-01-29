@@ -12,8 +12,28 @@
             font-size: 1.5em;
             font-weight: bold;
             text-align: center;
-            background-color: green;
-            color: tomato;
+            background-color: red;
+            color: rgb(71, 255, 126);
+
+        }
+
+        div h2 {
+            background-color: black;
+        }
+
+        .h2ConClass {
+            background-color: chocolate;
+            color: aquamarine;
+            border-radius: 0.3em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+
+        h3.h2ConClass {
+            text-align: center;
+            background-color: seagreen;
+            font-weight: lighter;
+            color: white;
         }
     </style>
 
@@ -39,7 +59,7 @@
         <h2>Eiqueta h2 que aplica estilos por hoja interna</h2>
         <h2>Otra etiqueta h2 que aplica estilos por hoja interna</h2>
 
-        <h1>Etiqueta h1 que aplica estilos por hoja externa<p>
+        <h1>Etiqueta h1 que aplica estilos por hoja externa<p class="cardInh1">
                 METODO RECOMENDADO
             </p>
         </h1>
@@ -47,6 +67,34 @@
                 METODO RECOMENDADO
             </p>
         </h1>
+
+        <h4>
+            Especificidad de la cascada de estilos
+            <ol type="1">
+                <li>Inline !important</li>
+                <li>Hoja Interna !important </li>
+                <li>Hoja Externa !important</li>
+                <li>Inline</li>
+                <li>Hoja Interna</li>
+                <li>Hoja Externa</li>
+            </ol>
+        </h4>
+        <h2 id="h2ConId">Usamos el atributo id para aplicar estilos individuales</h2>
+        <h2 class="h2ConClass">Usamos el atributo class para aplicar estilos a un grupo de elementos con el mismo valor
+            para el atributo class </h2>
+        <h3 class="h2ConClass">Usamos el atributo class para aplicar estilos a un grupo de elementos con el mismo valor
+            para el atributo class y a su vez los estilos especificados en h3, en la hoja interna </h3>
+
+        <h3>
+            A este elemento h3 le aplicamos estilos propios especificados
+            en la hoja interna
+        </h3>
+
+        <div>
+            <h2>Etiqueta h2 dento de un div</h2>
+        </div>
+
+        <h2>Otra etiqueta h2 </h2>
 
 
 </body>
