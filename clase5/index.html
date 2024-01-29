@@ -7,23 +7,73 @@
     <title>Clase 5 - Estilos (cont)</title>
     <style>
         body {
-            background-image: url('img/images.jpeg');
-            background-repeat: repeat;
-            background-size: 15em;
+            background-image: url('img/Jx.png');
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed;
+        }
+
+        p.normal {
+            border: 2px solid red;
+            padding: 5px;
+        }
+
+        p.round1 {
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        p.round2 {
+            border: 2px solid red;
+            border-radius: 8px;
+            padding: 5px;
+        }
+
+        p.round3 {
+            border: 2px solid red;
+            border-radius: 12px;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+
+        span {
+            border: 4px solid blue;
+            padding: 20px 10px 20px 10px;
+            margin-right: -5px;
+            display: inline-block;
+
+        }
+
+        span.span1 {
+            border-radius: 40px 10px 5px 10px;
+        }
+
+        span.span2 {
+            border-radius: 10px 40px 10px 5px;
+        }
+
+        .pMargin {
+            border: 2px solid red;
+            margin: 40px 20px;
+
+            padding: 40px 20px;
         }
     </style>
 </head>
 
 <body>
-    <a href="../index.html" title=" boton para volver al index">
-        <abbr title=" boton para volver al index">Volver</abbr>
-    </a>
+    <h1>Clase 5</h1>
+    <p class="normal">Normal border</p>
+    <p class="round1">Round border</p>
+    <p class="round2">Rounder border</p>
+    <p class="round3">Roundest border</p>
 
-    <h1>
-        Clase 5 - Estilos (cont)
-    </h1>
-    <hr />
+    <span class="span1"> texto </span>
+    <span class="span2"> texto </span>
 
+
+    <p class="pMargin"> Margin y Padding </p>
 
 </body>
 
